@@ -33,7 +33,14 @@ class ChatbotTestCase(unittest.TestCase):
                     KEY_MESSAGE: "me",
                 }
             },
-            # TODO HW13 - add another
+            {
+                KEY_INPUT: "!welcome",
+                KEY_EXPECTED:{
+                    KEY_IS_BOT: True,
+                    KEY_BOT_COMMAND: "welcome",
+                    KEY_MESSAGE: "",
+                }
+            }
         ]
         
         self.failure_test_params = [
